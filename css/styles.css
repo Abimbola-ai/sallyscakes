@@ -268,7 +268,7 @@ p {
     overflow: hidden;
     text-align: center;
     box-sizing: border-box;
-    border: 1px solid #ddd;
+    border: 1px solid #FFFEFC;
 }
 
 .featured-product-item-image {
@@ -315,13 +315,13 @@ button {
     /* padding: 1em; */
 }
 
-.grid-item {
+/* .grid-item {
     padding: 0.5em;
     font-family: 'Poppins';
     text-align: center;
     border: 1px solid #D5A947;
     margin: 3em;
-}
+} */
 
 .font-class-1 {
     font-family: 'Frunchy';
