@@ -1,0 +1,485 @@
+/* This style sheet is created for Sally's cakes */
+@font-face {
+    font-family:'ArtNuvo' ;
+    src: url(/fonts/Art-nuvo.ttf);
+}
+
+@font-face {
+    font-family: 'Frunchy';
+    src: url(/fonts/FontsFree-Net-Frunchy.ttf);
+}
+
+/* Style for the header */
+header {
+    width: 100%;
+    position: sticky;
+    top: 3;
+    display: flex;
+    justify-content: center;
+}
+/*Style for body to specify a background color*/
+body {
+    background-color: #1478B8;
+    margin: 0;
+}
+
+/* Style to create fluid image */
+img {
+    max-width: 80%;
+}
+
+.contact-img {
+    padding-top: 50px;
+}
+
+.first-img {
+    max-width: auto;
+    padding-top: 2em;
+}
+/* Style for nav specifies text properties */
+nav {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Style specifies padding and margin for unordered list */
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet styles, and applies margins and padding for list items withib the navigation */
+nav li {
+	background-color: #e57b7c;
+	border-radius: 1em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+}
+
+/* Style changes navigation link text color to white and removes the underline */
+nav li a {
+	color: #FFFEFC;
+	text-decoration: none;
+}
+
+.right-nav {
+    width: 50%;
+    text-align: right;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+    font-style: bold; 
+    margin-right: 100px;
+}
+
+
+
+/*Styles for nav anchor tags - creating pseudoselectors */
+.nav li a:visited, a:visited, .index-footer a:visited {
+    color: #1478B8;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.nav li a:link, a:link, .index-footer a:link {
+    color: #FFFEFC;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.nav li a:hover, a:hover, .index-footer a:hover{
+    color: #D5A947;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+.nav li a:active, a:active, .index-footer a:active {
+    color: #FFFEFC;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+form {
+    background-color: #FFFEFC;
+    width: 200px;
+    height: 35px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+input {
+    all: unset;
+    font-family: 'Poppins', sans-serif;
+    color: #1478B8;
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+::placeholder {
+    color: #D5A947;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.nav-button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  
+svg {
+    color: #D5A947;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+  }
+
+nav .right-nav {
+    float: right; 
+    padding-top: 2em;
+    display: inline;
+
+}
+
+/* Style for h1 */
+h1 {
+    color: #FFFEFC;
+    font-family: 'ArtNuvo', 'Poppins';
+    font-weight: 200;
+}
+
+/* Style for h3 */
+h3 {
+    color: #FFFEFC;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* Style for h2 */
+h2 {
+    color: #FFFEFC;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+/* Style for h4 */
+h4 {
+    color: #FFFEFC;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+/* Style for footer */
+footer {
+    padding-top: 10%;
+    color: #FFFEFC;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* Style for index footer */
+.index-footer {
+    border-top:2px solid #FFFEFC;
+    padding-top: 2%;
+    color: #FFFEFC;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#container {
+    max-width: 960px;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+} 
+
+/* Style for p */
+p {
+    color: #FFFEFC;
+    font-family: 'Poppins', sans-serif;
+}
+
+.post-full-title {
+    cursor: pointer;
+}
+
+.categories {
+    max-width: 1200px;
+    margin-top: 10em;
+    margin-bottom: 40px;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 33.33%;
+    border: 2px solid white;
+    box-sizing: border-box;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.category-item-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.category-item-inner > div {
+    padding: 5px 10px;
+    background: #FFFEFC;
+    color: #D5A947;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.featured-products {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.featured-products-title {
+    text-align: center;
+}
+
+.featured-product-item {
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.featured-product-item-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.featured-product-item > .title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.featured-product-item > .description {
+    color: #D5A947;
+}
+
+.featured-product-item > .price {
+    font-style: italic;
+}
+
+button {
+    outline: none;
+    background: #FFFEFC;
+    font-family: 'Poppins', sans-serif;
+    color: #D5A947;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 6em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    /* padding: 1em; */
+}
+
+.grid-item {
+    padding: 0.5em;
+    font-family: 'Poppins';
+    text-align: center;
+    border: 1px solid #D5A947;
+    margin: 3em;
+}
+
+.font-class-1 {
+    font-family: 'Frunchy';
+    font-weight: bold;
+    font-size: 4em;
+    padding: 1em;
+    padding-bottom: 0%;
+}
+
+.font-class-2 {
+    font-family: 'Frunchy';
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
+    margin: auto;
+    padding-bottom: 0%;
+}
+
+.font-class-3 {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #D5A947;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.font-class-4 {
+    float: left;
+    padding-top: 0%;
+    padding-left: 2em;
+    text-align: center;
+}
+
+.image-for-class {
+    /* float:left; */
+    max-width: 80%;
+    margin: auto;
+    /* margin-top: 2em;
+    margin-left: 2em; */
+    border-top-left-radius: 50em;
+    border-top-right-radius: 50em;
+    border: solid #D5A947;
+}
+
+/* Style for social media icons */
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 20px;
+    border-radius: 50%;
+  }
+  
+.fa:hover {
+      opacity: 0.7;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+.fa-whatsapp {
+    background: #00b489;
+    color: white;
+  }
+/*Media query for tablet viewport targets screen size with a minimum width of 481px. */
+@media only screen and (min-width: 481px) {
+
+    header p {
+		margin-bottom: 4em;
+		padding-top: 1.5em;
+	}
+
+	/* Style specifies display type, float type, margin, padding and width for nav li elements*/
+	nav li {
+		display: inline;
+		float: left;
+		margin-left: 1%;
+		margin-right: 1%;
+		padding-left: 0;
+		padding-right: 0;
+		width: 23%;
+	}
+
+    .nav li a:visited, a:visited, .index-footer a:visited {
+        color: #1478B8;
+        background-color: transparent;
+        text-decoration: none;
+      }
+    
+    .nav li a:link, a:link, .index-footer a:link {
+        color: #FFFEFC;
+        background-color: transparent;
+        text-decoration: none;
+      }
+    
+    .nav li a:hover, a:hover, .index-footer a:hover{
+        color: #D5A947;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+    .nav li a:active, a:active, .index-footer a:active {
+        color: #FFFEFC;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+}
+/*Media query for desktop viewport targets screen size with a minimum width of 769px. */
+/* @media only screen and (min-width: 769px) {
+
+	/* Style specifies a width for container */
+	/* #container {
+		width: 80%;
+	} */
+
+@media (max-width: 1000px) {
+    .category-item {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .category-item {
+        min-width: 100%;
+    }
+    #container {
+		width: 80%;
+	}
+}
+
+
+@media (max-width: 1000px) {
+    .featured-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .featured-products {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
