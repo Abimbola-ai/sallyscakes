@@ -29,7 +29,8 @@ img {
 }
 
 .contact-img {
-    padding-top: 50px;
+    padding-top: 5em;
+    max-width: auto;
 }
 
 .first-img {
@@ -78,31 +79,31 @@ nav li a {
 
 
 /*Styles for nav anchor tags - creating pseudoselectors */
-.nav li a:visited, a:visited, .index-footer a:visited {
+.nav li a:visited, a:visited, .index-footer a:visited, .footer-for-classes a:visited  {
     color: #1478B8;
     background-color: transparent;
     text-decoration: none;
   }
 
-.nav li a:link, a:link, .index-footer a:link {
+.nav li a:link, a:link, .index-footer a:link, .footer-for-classes a:link{
     color: #FFFEFC;
     background-color: transparent;
     text-decoration: none;
   }
 
-.nav li a:hover, a:hover, .index-footer a:hover{
+.nav li a:hover, a:hover, .index-footer a:hover, .footer-for-classes a:hover{
     color: #D5A947;
     background-color: transparent;
     text-decoration: none;
   }
   
-.nav li a:active, a:active, .index-footer a:active {
+.nav li a:active, a:active, .index-footer a:active, .footer-for-classes a:active{
     color: #FFFEFC;
     background-color: transparent;
     text-decoration: none;
 }
 
-form {
+.right-nav form {
     background-color: #FFFEFC;
     width: 200px;
     height: 35px;
@@ -119,7 +120,7 @@ input {
     height: 100%;
     width: 100%;
     padding: 10px 10px;
-  }
+  } 
 
 ::placeholder {
     color: #D5A947;
@@ -195,6 +196,14 @@ footer {
     text-align: center;
 }
 
+.footer-for-classes {
+    padding-top: 30%;
+    color: #FFFEFC;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+}
+
 #container {
     max-width: 960px;
     margin: auto;
@@ -217,6 +226,7 @@ p {
     margin-top: 10em;
     margin-bottom: 40px;
     margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -305,15 +315,15 @@ button {
     margin: 10px 0;
 }
 
-.grid-container {
+/* .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     padding-top: 6em;
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
-    /* padding: 1em; */
-}
+    padding: 1em;
+} */
 
 /* .grid-item {
     padding: 0.5em;
@@ -327,17 +337,19 @@ button {
     font-family: 'Frunchy';
     font-weight: bold;
     font-size: 4em;
-    padding: 1em;
-    padding-bottom: 0%;
+    padding-top: 0.2em;
+    /* padding: 1em;
+    padding-bottom: 0%; */
 }
 
 .font-class-2 {
     font-family: 'Frunchy';
     font-size: 2em;
     text-align: center;
-    padding: 1em;
+    padding-bottom: 1em;
+    /* padding: 1em;
     margin: auto;
-    padding-bottom: 0%;
+    padding-bottom: 0%; */
 }
 
 .font-class-3 {
@@ -345,26 +357,123 @@ button {
     font-weight: bold;
     font-size: 1.5em;
     color: #D5A947;
-    padding-bottom: 10%;
+    padding-bottom: 1em;
+    /* padding-bottom: 10%; */
     text-align: center;
 }
 
 .font-class-4 {
-    float: left;
-    padding-top: 0%;
-    padding-left: 2em;
+    /* float: left; */
+    /* padding-top: 0%;
+    padding-left: 2em; */
     text-align: center;
 }
 
 .image-for-class {
-    /* float:left; */
-    max-width: 80%;
-    margin: auto;
-    /* margin-top: 2em;
-    margin-left: 2em; */
     border-top-left-radius: 50em;
     border-top-right-radius: 50em;
     border: solid #D5A947;
+    margin-top: 3em;
+}
+/* .image-for-class2 {
+    float:left;
+    max-width: auto; */
+    /* margin: auto; */
+    /* margin-top: 3em; */
+    /* margin-left: -10%; 
+    border-top-left-radius: 50em;
+    border-top-right-radius: 50em;
+    border: solid #D5A947; */
+/* } */
+
+figcaption {
+    margin-top: 14em;
+    
+}
+
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:400"); */
+
+/* Set font of all elements to 'Roboto' */
+* {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
+}
+
+
+#contact-form {
+	text-align: center;
+    color: #E57B7C;
+    font-weight: bold;
+
+}
+
+/* Add styles to 'container' class */
+.container {
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: #FFFEFC;
+	border-radius: 4px;
+}
+
+/* Add styles to 'label' selector */
+label{
+	font-size: 0.85em;
+	margin-left: 12px;
+    color: #E57B7C;
+
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e57b7c;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+	border: 1px solid #1478B8;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+	background: #1478B8;
+	margin: 0 auto;
+	outline: 0;
+	color: #FFFEFC;
+	border: 0;
+	padding: 12px 1px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+	background: #1478B8;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+	background: #1478B8;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+	text-align: center;
 }
 
 /* Style for social media icons */
@@ -420,29 +529,30 @@ button {
 		width: 23%;
 	}
 
-    .nav li a:visited, a:visited, .index-footer a:visited {
+    .nav li a:visited, a:visited, .index-footer a:visited, .footer-for-classes a:visited  {
         color: #1478B8;
         background-color: transparent;
         text-decoration: none;
       }
     
-    .nav li a:link, a:link, .index-footer a:link {
+    .nav li a:link, a:link, .index-footer a:link, .footer-for-classes a:link{
         color: #FFFEFC;
         background-color: transparent;
         text-decoration: none;
       }
     
-    .nav li a:hover, a:hover, .index-footer a:hover{
+    .nav li a:hover, a:hover, .index-footer a:hover, .footer-for-classes a:hover{
         color: #D5A947;
         background-color: transparent;
         text-decoration: none;
       }
       
-    .nav li a:active, a:active, .index-footer a:active {
+    .nav li a:active, a:active, .index-footer a:active, .footer-for-classes a:active{
         color: #FFFEFC;
         background-color: transparent;
         text-decoration: none;
     }
+    
 
 }
 /*Media query for desktop viewport targets screen size with a minimum width of 769px. */
@@ -457,6 +567,9 @@ button {
     .category-item {
         min-width: 50%;
     }
+    .image-for-class2 {
+        float:clear;
+    }
 }
 
 @media (max-width: 800px) {
@@ -466,6 +579,9 @@ button {
     #container {
 		width: 80%;
 	}
+    .image-for-class2 {
+        float:clear;
+    }
 }
 
 
