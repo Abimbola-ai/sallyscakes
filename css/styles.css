@@ -1,4 +1,8 @@
-/* This style sheet is created for Sally's cakes */
+/* This style sheet is created for Sally's cakes 
+Created by: Olajumoke Ojikutu C0860866
+Date: August 31st, 2022 */
+
+/* Import fonts */
 @font-face {
     font-family:'ArtNuvo' ;
     src: url(/fonts/Art-nuvo.ttf);
@@ -9,7 +13,7 @@
     src: url(/fonts/FontsFree-Net-Frunchy.ttf);
 }
 
-/* Style for the header */
+/* Style for the header of all the htmls*/
 header {
     width: 100%;
     position: sticky;
@@ -17,7 +21,13 @@ header {
     display: flex;
     justify-content: center;
 }
-/*Style for body to specify a background color*/
+
+/* Style for class displayed in header */
+.post-full-title {
+    cursor: pointer;
+}
+
+/*Style for body to specify a background color and margin*/
 body {
     background-color: #1478B8;
     margin: 0;
@@ -28,16 +38,22 @@ img {
     max-width: 80%;
 }
 
+/* Style for the image used in the contact.html */
 .contact-img {
     padding-top: 5em;
     max-width: auto;
 }
 
+/* Style for image used on the main page */
 .first-img {
     max-width: auto;
     padding-top: 2em;
 }
-/* Style for nav specifies text properties */
+
+
+/* Styling the navigation */
+/* Style specifies padding and margin for unordered list in navigation */
+/* Style for nav to specify text properties */
 nav {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.3em;
@@ -45,7 +61,6 @@ nav {
 	text-align: center;
 }
 
-/* Style specifies padding and margin for unordered list */
 nav ul {
 	padding: 0;
 	margin-top: 0.5em;
@@ -61,12 +76,13 @@ nav li {
 	padding: 0.4em;
 }
 
-/* Style changes navigation link text color to white and removes the underline */
+/* Style changes navigation link text color and removes the underline */
 nav li a {
 	color: #FFFEFC;
 	text-decoration: none;
 }
 
+/* Style for the search box in nav*/
 .right-nav {
     width: 50%;
     text-align: right;
@@ -76,9 +92,7 @@ nav li a {
     margin-right: 100px;
 }
 
-
-
-/*Styles for nav anchor tags - creating pseudoselectors */
+/*Styles for nav anchor tags - creating pseudoselectors for other anchor tag links*/
 .nav li a:visited, a:visited, .index-footer a:visited, .footer-for-classes a:visited  {
     color: #1478B8;
     background-color: transparent;
@@ -103,6 +117,7 @@ nav li a {
     text-decoration: none;
 }
 
+/* Style for the search box form located at nav */
 .right-nav form {
     background-color: #FFFEFC;
     width: 200px;
@@ -113,6 +128,7 @@ nav li a {
     align-items: center;
   }
 
+/* Style for input of the right nav */
 input {
     all: unset;
     font-family: 'Poppins', sans-serif;
@@ -122,18 +138,20 @@ input {
     padding: 10px 10px;
   } 
 
+/* Style for all placeholders */
 ::placeholder {
     color: #D5A947;
     font-family: 'Poppins', sans-serif;
   }
 
+/* Style for the nav-button class created for search box */
 .nav-button {
     all: unset;
     cursor: pointer;
     width: 44px;
     height: 44px;
   }
-  
+/* Style for the svg created for search box */  
 svg {
     color: #D5A947;
     fill: currentColor;
@@ -142,6 +160,7 @@ svg {
     padding: 10px;
   }
 
+/* Style for the right-nav class, specifying float, padding and display */
 nav .right-nav {
     float: right; 
     padding-top: 2em;
@@ -177,7 +196,7 @@ h4 {
     font-weight: 100;
 }
 
-/* Style for footer */
+/* Style for footer that is common to all html*/
 footer {
     padding-top: 10%;
     color: #FFFEFC;
@@ -186,7 +205,7 @@ footer {
     text-align: center;
 }
 
-/* Style for index footer */
+/* Style for index.html footer */
 .index-footer {
     border-top:2px solid #FFFEFC;
     padding-top: 2%;
@@ -196,14 +215,16 @@ footer {
     text-align: center;
 }
 
+/* Style for the class created for footer, specifying padding, color and font */
 .footer-for-classes {
-    padding-top: 30%;
+    padding-top: 10%;
     color: #FFFEFC;
     font-family: 'Poppins', sans-serif;
     font-size: 0.8em;
     text-align: center;
 }
 
+/* Style for the id container created for the contact.html form */
 #container {
     max-width: 960px;
     margin: auto;
@@ -217,10 +238,7 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
-.post-full-title {
-    cursor: pointer;
-}
-
+/* Style created for the class categories in the order.html, specifying width, margin and display */
 .categories {
     max-width: 1200px;
     margin-top: 10em;
@@ -231,6 +249,7 @@ p {
     flex-wrap: wrap;
 }
 
+/* Style created for the class category-item in the order.html, specifying width, border and background properties */
 .category-item {
     flex-grow: 1;
     flex-basis: 0;
@@ -242,6 +261,7 @@ p {
     background-position: center;
 }
 
+/* Style created for the class category-item-inner in the order.html,specifying display, content alignment and height */
 .category-item-inner {
     display: flex;
     justify-content: center;
@@ -249,6 +269,7 @@ p {
     height: 100%;
 }
 
+/* Style created for the class category-item-inner div in the order.html, specifying padding, background properties, font, border etc */
 .category-item-inner > div {
     padding: 5px 10px;
     background: #FFFEFC;
@@ -260,6 +281,7 @@ p {
     text-transform: uppercase;
 }
 
+/* Style created for the class featured-products in the order.html, specifying margin, diplay, width and grid */
 .featured-products {
     margin-top: 20px;
     max-width: 1200px;
@@ -269,10 +291,12 @@ p {
     grid-gap: 5px;
 }
 
+/* Style created for the class featured-products-title in the order.html, specifying text alignment */
 .featured-products-title {
     text-align: center;
 }
 
+/* Style created for the class featured-products-item in the order.html, specifying border-radius, text alignment */
 .featured-product-item {
     border-radius: 5px;
     overflow: hidden;
@@ -281,26 +305,31 @@ p {
     border: 1px solid #FFFEFC;
 }
 
+/* Style created for the class featured-products-item-image in the order.html, image height and background properties */
 .featured-product-item-image {
     height: 200px;
     background-size: cover;
     background-position: center;
 }
 
+/* Style created for the subclass title in the order.html, font properties */
 .featured-product-item > .title {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
 }
 
+/* Style created for the subclass description in the order.html specifying color */
 .featured-product-item > .description {
     color: #D5A947;
 }
 
+/* Style created for the subclass price in the order.html specifying font-dty;e */
 .featured-product-item > .price {
     font-style: italic;
 }
 
+/* Style for button elements */
 button {
     outline: none;
     background: #FFFEFC;
@@ -315,31 +344,12 @@ button {
     margin: 10px 0;
 }
 
-/* .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding-top: 6em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
-    padding: 1em;
-} */
-
-/* .grid-item {
-    padding: 0.5em;
-    font-family: 'Poppins';
-    text-align: center;
-    border: 1px solid #D5A947;
-    margin: 3em;
-} */
-
+/* Style for different fonts in the classes.html  */
 .font-class-1 {
     font-family: 'Frunchy';
     font-weight: bold;
     font-size: 4em;
     padding-top: 0.2em;
-    /* padding: 1em;
-    padding-bottom: 0%; */
 }
 
 .font-class-2 {
@@ -347,9 +357,6 @@ button {
     font-size: 2em;
     text-align: center;
     padding-bottom: 1em;
-    /* padding: 1em;
-    margin: auto;
-    padding-bottom: 0%; */
 }
 
 .font-class-3 {
@@ -358,14 +365,10 @@ button {
     font-size: 1.5em;
     color: #D5A947;
     padding-bottom: 1em;
-    /* padding-bottom: 10%; */
     text-align: center;
 }
 
 .font-class-4 {
-    /* float: left; */
-    /* padding-top: 0%;
-    padding-left: 2em; */
     text-align: center;
 }
 
@@ -375,25 +378,9 @@ button {
     border: solid #D5A947;
     margin-top: 3em;
 }
-/* .image-for-class2 {
-    float:left;
-    max-width: auto; */
-    /* margin: auto; */
-    /* margin-top: 3em; */
-    /* margin-left: -10%; 
-    border-top-left-radius: 50em;
-    border-top-right-radius: 50em;
-    border: solid #D5A947; */
-/* } */
 
-figcaption {
-    margin-top: 14em;
-    
-}
 
-/* @import url("https://fonts.googleapis.com/css?family=Roboto:400"); */
-
-/* Set font of all elements to 'Roboto' */
+/* Set font of all elements to 'Poppins' */
 * {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
@@ -404,7 +391,7 @@ figcaption {
 	outline: 0;
 }
 
-
+/* Styles for the id created for contact form */
 #contact-form {
 	text-align: center;
     color: #E57B7C;
@@ -555,14 +542,7 @@ input[type=submit]:hover {
     
 
 }
-/*Media query for desktop viewport targets screen size with a minimum width of 769px. */
-/* @media only screen and (min-width: 769px) {
-
-	/* Style specifies a width for container */
-	/* #container {
-		width: 80%;
-	} */
-
+/*Media query for viewport targets screen size with a maximum width of 1000px. */
 @media (max-width: 1000px) {
     .category-item {
         min-width: 50%;
@@ -572,6 +552,13 @@ input[type=submit]:hover {
     }
 }
 
+@media (max-width: 1000px) {
+    .featured-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*Media query for viewport targets screen size with a maximum width of 800px. */
 @media (max-width: 800px) {
     .category-item {
         min-width: 100%;
@@ -581,13 +568,6 @@ input[type=submit]:hover {
 	}
     .image-for-class2 {
         float:clear;
-    }
-}
-
-
-@media (max-width: 1000px) {
-    .featured-products {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
