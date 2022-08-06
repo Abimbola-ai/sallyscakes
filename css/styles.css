@@ -238,6 +238,22 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
+/* .top-contact {
+    display: flex;
+}
+
+.contact {
+    height: 1000px;
+    width: 200px;
+    margin-top: 2em;
+    margin-left: auto;
+    
+}
+.contact-map {
+    height: 1000px;
+    width: 300px;
+
+} */
 /* Style created for the class categories in the order.html, specifying width, margin and display */
 .categories {
     max-width: 1200px;
@@ -497,6 +513,8 @@ input[type=submit]:hover {
     background: #00b489;
     color: white;
   }
+
+
 /*Media query for tablet viewport targets screen size with a minimum width of 481px. */
 @media only screen and (min-width: 481px) {
 
