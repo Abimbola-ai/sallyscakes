@@ -1,6 +1,6 @@
 /* This style sheet is created for Sally's cakes 
 Created by: Olajumoke Ojikutu C0860866
-Date: August 31st, 2022 */
+Date: August 13th, 2022 */
 
 /* Import fonts */
 @font-face {
@@ -17,7 +17,7 @@ Date: August 31st, 2022 */
 header {
     width: 100%;
     position: sticky;
-    top: 3;
+    /* top: 3; */
     display: flex;
     justify-content: center;
 }
@@ -41,13 +41,17 @@ img {
 /* Style for the image used in the contact.html */
 .contact-img {
     padding-top: 5em;
-    max-width: auto;
+    /* max-width: auto; */
 }
 
 /* Style for image used on the main page */
 .first-img {
-    max-width: auto;
+    /* max-width: auto; */
     padding-top: 2em;
+}
+
+.map-image {
+    max-width: 100%;
 }
 
 
@@ -88,7 +92,7 @@ nav li a {
     text-align: right;
     font-family: 'Poppins', sans-serif; 
     font-weight: 300;
-    font-style: bold; 
+    font-style: normal;
     margin-right: 100px;
 }
 
@@ -224,7 +228,14 @@ footer {
     text-align: center;
 }
 
-/* Style for the id container created for the contact.html form */
+/* Style for the id created in the contact.html footer, setting new color for anchor tags */
+#contact-footer a:visited {
+    color: #D5A947;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Style for the id container in the html files */
 #container {
     max-width: 960px;
     margin: auto;
@@ -238,22 +249,33 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
-/* .top-contact {
-    display: flex;
+/* Style for the contact section of the website */
+/* Style for the div id that wraps the contact sections */
+#contact {
+    width: 100%;
+    height: 50%;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.3em;
+    display: block;
 }
 
-.contact {
-    height: 1000px;
-    width: 200px;
-    margin-top: 2em;
-    margin-left: auto;
-    
+/* Syle for the id mid-contact */
+#mid-contact {
+    width: 50%;
+    float: right;
+    padding-top: 2em;
 }
-.contact-map {
-    height: 1000px;
-    width: 300px;
 
-} */
+/* Syle for the id top-contact */
+#top-contact {
+    width: 50%;
+    float: left;
+    text-align: center; 
+    padding-top: 2em;
+}
+
 /* Style created for the class categories in the order.html, specifying width, margin and display */
 .categories {
     max-width: 1200px;
@@ -395,6 +417,9 @@ button {
     margin-top: 3em;
 }
 
+.contact-details {
+    text-align: center;
+}
 
 /* Set font of all elements to 'Poppins' */
 * {
@@ -416,12 +441,14 @@ button {
 }
 
 /* Add styles to 'container' class */
-.container {
-	padding: 12px 24px 24px 24px;
-	margin: 48px 12px;
+#bottom-contact{
+	padding: 30px 24px 24px 30px;
+    margin-left: 2em;
+    margin-right: 5em;
+    margin-top: 28em;
 	background: #FFFEFC;
 	border-radius: 4px;
-}
+} */
 
 /* Add styles to 'label' selector */
 label{
@@ -565,9 +592,7 @@ input[type=submit]:hover {
     .category-item {
         min-width: 50%;
     }
-    .image-for-class2 {
-        float:clear;
-    }
+    
 }
 
 @media (max-width: 1000px) {
@@ -581,17 +606,35 @@ input[type=submit]:hover {
     .category-item {
         min-width: 100%;
     }
-    #container {
-		width: 80%;
-	}
-    .image-for-class2 {
-        float:clear;
-    }
+
 }
 
 @media (max-width: 800px) {
     .featured-products {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    #top-contact {
+        min-width: 100%;
+        padding: auto;
+        float: center;
+    }
+    #mid-contact {
+        float: clear;
+        min-width: 100%;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    #bottom-contact {
+        margin-top: 40em;
+        margin-right: 2em;
+    }
+
+    #contact {
+        display: inline;
     }
 }
 
